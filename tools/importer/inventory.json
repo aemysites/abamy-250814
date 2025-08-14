@@ -1,0 +1,780 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-00-32f838702514506e3edf29f6523bc341583abd17",
+          "xpath": "/html[1]/body[1]/header[1]/div[1]/div[3]/div[1]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-00-32f838702514506e3edf29f6523bc341583abd17",
+          "xpath": "/html[1]/body[1]/header[1]/div[1]/div[3]/div[1]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-00-32f838702514506e3edf29f6523bc341583abd17",
+          "xpath": "/html[1]/body[1]/header[1]/div[1]/div[3]/div[1]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/magasins",
+          "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+          "uuid": "b79d242b-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]"
+        }
+      ],
+      "styles": {
+        "height": 65
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-18-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-22-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-21-6151f65c5ba925cfd085d2a9e5dfcf538c089083",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]/div[2]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/magasins",
+          "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+          "uuid": "b79d242b-05-8564758fa9430e613320764974c67e22751fe37f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]"
+        }
+      ],
+      "styles": {
+        "background": "rgb(241, 236, 233) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Columns",
+      "cluster": 1,
+      "source": "Columns",
+      "target": "Columns (columns1)",
+      "key": "columns1",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-05-43779df1380350c1e45a1be77310a9e75c2743e0",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[2]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-09-06ff88b26348754d60e60ac973abe46be13d27f8",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[6]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-13-40eefc3eb74a8286ac1e8868014b1a26c86b14a5",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[10]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 2,
+      "source": "Cards",
+      "target": "Cards (cards2)",
+      "key": "cards2",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-08-07e0767bc523c83b4a6b7696c0e7c4104ff0ad6b",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 3,
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-16-d5fc3d9486bbf512afdb4d6200259f86942c1a70",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/div[3]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-20-bf6bc3422b133d22277cf37a21695689ccac15db",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]",
+          "section": "section-3"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-18-bf6bc3422b133d22277cf37a21695689ccac15db",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]",
+          "section": "section-3"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 4,
+      "source": "Hero",
+      "target": "Hero (hero4)",
+      "key": "hero4",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-09-2273baace965553b041f7e71d3b9f7ce80ea335b",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[1]/div[1]/div[1]/div[1]/div[1]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-14-8f81428e60d2ec1d1301af344a248410269a5cae",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[4]/div[1]/div[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 5,
+      "source": "Cards",
+      "target": "Cards (cards5)",
+      "key": "cards5",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-05-b635464dca910986ee5019c6267d255cf87d9214",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-11-b660ade71aebc616efcbae799c170bdb7ef7455e",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 6,
+      "source": "Header",
+      "target": "Header",
+      "key": "header6",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/magasins",
+          "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+          "uuid": "b79d242b-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 7,
+      "source": "Cards",
+      "target": "Cards (cards7)",
+      "key": "cards7",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-15-4e74b9bf9f7d4a529dd9ad90445c271e68ad92ba",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/div[2]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-19-0bd8c44cb64a9652badae6f2e0f6f878e0a4df20",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[6]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 8,
+      "source": "Hero",
+      "target": "Hero (hero8)",
+      "key": "hero8",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-03-c1931b33eda47e61ff8dca396c2c5afed6a61ed0",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 9,
+      "source": "Hero",
+      "target": "Hero (hero9)",
+      "key": "hero9",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-18-88b4bbdf6aacdf2377d6d21b7e592a1433bd8009",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[6]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 10,
+      "source": "Columns",
+      "target": "Columns (columns10)",
+      "key": "columns10",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-17-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]",
+          "section": "section-4"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-21-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]",
+          "section": "section-4"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-20-a84a8b5921d7a907f1206cef872ffb215b1fa09f",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]/div[1]",
+          "section": "section-4"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/magasins",
+          "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+          "uuid": "b79d242b-04-0a459baa9944b819c965bd5defd939b8a390d17d",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[1]",
+          "section": "section-4"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 11,
+      "source": "Hero",
+      "target": "Hero (hero11)",
+      "key": "hero11",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-02-31d3c8896b1fd3531c6b4d088f068667d668f20a",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-01-31d3c8896b1fd3531c6b4d088f068667d668f20a",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-01-055ede6dffd61c5e0fa89f581c8ed04778298656",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/section[1]"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 12,
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-19-8432047a6065c3f16241857848a3c7b0988274fc",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]",
+          "section": "section-4"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 13,
+      "source": "Hero",
+      "target": "Hero (hero13)",
+      "key": "hero13",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-13-0b9449eebe82e3d3df2e77cb94286fa67931cf0a",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[3]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 14,
+      "source": "Hero",
+      "target": "Hero (hero14)",
+      "key": "hero14",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/magasins",
+          "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+          "uuid": "b79d242b-02-764deff5da11c1e63c49829d6eef5b2e52084cea",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 15,
+      "source": "Columns",
+      "target": "Columns (columns15)",
+      "key": "columns15",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-12-e4fc43a19526e03c4bf10f49ef351f4b1dd47ea2",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[6]/div[1]/div[1]",
+          "section": "section-5"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 16,
+      "source": "Hero",
+      "target": "Hero (hero16)",
+      "key": "hero16",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-03-73cb8abb36f1924d7fc1950a7a8db7a9e8b58690",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 17,
+      "source": "Columns",
+      "target": "Columns (columns17)",
+      "key": "columns17",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-04-96fb128b4cfde232aeb9b1f1a6b2f607791aa2eb",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[2]",
+          "section": "section-5"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 18,
+      "source": "Cards",
+      "target": "Cards (cards18)",
+      "key": "cards18",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-16-fc55bba676aeffa171c96e914bce89cb5f8ac57f",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[4]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 19,
+      "source": "Columns",
+      "target": "Columns (columns19)",
+      "key": "columns19",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-03-d81e4c3c20d0a1791815f1a79398c8ff26da54f4",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[1]/div[1]",
+          "section": "section-5"
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "cluster": 20,
+      "source": "Search",
+      "target": "Search",
+      "key": "search20",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/magasins",
+          "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+          "uuid": "b79d242b-01-6e3ca3be7d086abaf1cd59b3e9b1faafc4271948",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]/section[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 21,
+      "source": "Cards",
+      "target": "Cards (cards21)",
+      "key": "cards21",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+          "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+          "uuid": "4be5ff47-15-eee50e00505102ac1f0d2438225cdad8ba618a20",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[7]/div[2]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 22,
+      "source": "Hero",
+      "target": "Hero (hero22)",
+      "key": "hero22",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-04-fa59825dfa0b6e5578949b96ce32e45fc13396e1",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 23,
+      "source": "Cards",
+      "target": "Cards (cards23)",
+      "key": "cards23",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-12-8b9ee23a8bb542abebc237e86664c9fae0a1ec06",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 24,
+      "source": "Columns",
+      "target": "Columns (columns24)",
+      "key": "columns24",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-07-6bc9cc771b052b1c50d93644a474704c549ba242",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[4]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+          "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+          "uuid": "08bb3052-11-da565c95b2f842497d4a6a3851af5710237c2ff2",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[8]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 25,
+      "source": "Cards",
+      "target": "Cards (cards25)",
+      "key": "cards25",
+      "instances": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+          "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+          "uuid": "41759303-17-ca387fba1f9b5c8091f69447f767d36f096cc09a",
+          "xpath": "/html[1]/body[1]/div[1]/main[1]/section[5]",
+          "section": "section-2"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-00-32f838702514506e3edf29f6523bc341583abd17",
+      "xpath": "/html[1]/body[1]/header[1]/div[1]/div[3]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-01-5da1e92a5b2003ea51a2d60912beb29973c5e3c1",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/nav[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-04-5c7e161dd06a2054bd85ad5bad11c3ddf78b8509",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[1]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-06-281fb0e65ed490ad0170ec45f93e2afbb50ec2fc",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[3]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-08-534e4fe9f27c7ce9ad8890a9f6c70d58ed0d2293",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[5]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-10-cb28094d93284a72b0dd694a0dc32bea2f1f1e15",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[7]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-12-099655ed6d5b6558047f1f5dca39e92a9393dd2d",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[3]/div[9]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-14-bf6bc3422b133d22277cf37a21695689ccac15db",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/div[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "urlHash": "08bb30521187c6311481f0f3f198514e48ebb364",
+      "uuid": "08bb3052-18-8564758fa9430e613320764974c67e22751fe37f",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+      "uuid": "41759303-00-32f838702514506e3edf29f6523bc341583abd17",
+      "xpath": "/html[1]/body[1]/header[1]/div[1]/div[3]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+      "uuid": "41759303-02-bdfad4d7c73eb7f21c4b098d24caa213e2b7eb92",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+      "uuid": "41759303-06-7bc58cc4e910ef37472ef7ca7e86df01678826b2",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+      "uuid": "41759303-07-198f685d94221d6e8abab90bb57ebbf60ac4b04f",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+      "uuid": "41759303-10-5298616bb3b09a37895c578636d5da6746e41fb8",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[1]/div[1]/div[1]/div[1]/p[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+      "uuid": "41759303-15-2c7456791926f235008b096c0e3c1040295f14f4",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[4]/div[4]/div[1]/div[1]/div[1]/p[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "urlHash": "41759303accf3a88540ccee9c006e46a46b352f7",
+      "uuid": "41759303-22-8564758fa9430e613320764974c67e22751fe37f",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-00-32f838702514506e3edf29f6523bc341583abd17",
+      "xpath": "/html[1]/body[1]/header[1]/div[1]/div[3]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-02-cd8e602e0a0b7e735ab1e666a7010c4359bffb8f",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[1]/h2[1]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-05-4f5a55697f6d988c23bb93e2709af0db85135c22",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[4]/h2[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-06-74aff1f722212dd519f6a96e5c0e19fb08b175d5",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[4]/div[1]/div[2]/img[2]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-07-3b3eab27d5ea29a98e879641a3820fa540228420",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[4]/div[2]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-08-9c1fc3585254f331faef055e828e65924d27ba18",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[4]/div[3]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-09-afffdb1e61cb4e7bee46d293dfd6e613359b6879",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[4]/p[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-10-cc96dac4beef1e49a06b940d63b2595cb623579d",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[4]/a[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-11-2df0f38c9d09ed6b558ff8accb743c400064209e",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[6]/div[1]/h2[1]",
+      "section": "section-5"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-13-06291e08c9859ffab885f876f0bf151f1592a887",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/section[2]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-14-da72e4076207f01763e73c27ea02414b83d26ef8",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[7]/div[1]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-16-94104091f9aa9050aec462da806acac42c14ac79",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[7]/div[2]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-17-461df42b720f90d4253a849388784447c799ea7f",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/section[1]/div[7]/a[1]",
+      "section": "section-6"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "urlHash": "4be5ff47804c107eb04da219cdbc7762f96818b0",
+      "uuid": "4be5ff47-21-6151f65c5ba925cfd085d2a9e5dfcf538c089083",
+      "xpath": "/html[1]/body[1]/footer[1]/div[2]/div[2]",
+      "section": "section-4"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/magasins",
+      "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+      "uuid": "b79d242b-03-4e74b9bf9f7d4a529dd9ad90445c271e68ad92ba",
+      "xpath": "/html[1]/body[1]/div[1]/main[1]/div[2]"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/magasins",
+      "urlHash": "b79d242bc2a941a465323f4ccbf68701a8af9003",
+      "uuid": "b79d242b-05-8564758fa9430e613320764974c67e22751fe37f",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]",
+      "section": "section-4"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgb(247, 247, 247) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 3
+    },
+    {
+      "name": "section-2",
+      "background": "rgb(251, 247, 245) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 12
+    },
+    {
+      "name": "section-3",
+      "background": "rgb(58, 140, 147) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 3
+    },
+    {
+      "name": "section-4",
+      "background": "rgb(241, 236, 233) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 9
+    },
+    {
+      "name": "section-5",
+      "background": "rgb(240, 236, 234) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 5
+    },
+    {
+      "name": "section-6",
+      "background": "rgb(220, 0, 27) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 1
+    }
+  ]
+}
