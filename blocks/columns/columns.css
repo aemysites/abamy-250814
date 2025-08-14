@@ -421,7 +421,6 @@
   padding: 40px 0 48px;
 }
 
-/* Main block: grid for two columns */
 .columns.columns17 > div {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
@@ -432,7 +431,6 @@
   width: 100%;
 }
 
-/* --- LEFT COLUMN --- */
 .columns.columns17 > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -442,7 +440,6 @@
   gap: 0;
 }
 
-/* Chat Row: avatar left, chat bubbles right */
 .columns.columns17 > div > div:first-child .columns17-chatrow {
   display: flex;
   flex-direction: row;
@@ -453,12 +450,10 @@
 }
 
 .columns.columns17 > div > div:first-child > p:nth-child(1) {
-  /* If not in .columns17-chatrow (legacy case), don't flex */
   margin: 0;
   padding: 0;
 }
 
-/* Force the avatar and bubbles into a row if not wrapped in .columns17-chatrow */
 .columns.columns17 > div > div:first-child > p:nth-child(1),
 .columns.columns17 > div > div:first-child > p:nth-child(2),
 .columns.columns17 > div > div:first-child > p:nth-child(3),
@@ -466,7 +461,6 @@
   display: block;
 }
 
-/* Avatar style */
 .columns.columns17 > div > div:first-child > p:nth-child(1) img {
   width: 66px;
   height: 66px;
@@ -479,7 +473,6 @@
   margin-bottom: 0;
 }
 
-/* Chat bubbles: stacked vertically, to right of avatar */
 .columns.columns17 > div > div:first-child .columns17-bubbles,
 .columns.columns17 > div > div:first-child > .columns17-bubbles {
   display: flex;
@@ -505,18 +498,14 @@
   box-shadow: 0 1px 4px rgb(80 60 50 / 5%);
   line-height: 1.38;
 }
-
-/* Add space between bubbles */
 .columns.columns17 > div > div:first-child > p:nth-child(2) { margin-bottom: 13px; }
 .columns.columns17 > div > div:first-child > p:nth-child(3) { margin-bottom: 13px; }
 .columns.columns17 > div > div:first-child > p:nth-child(4) { margin-bottom: 0; }
 
-/* Remove/hide the unnecessary small image below bubbles */
 .columns.columns17 > div > div:first-child > p:nth-child(5) {
   display: none;
 }
 
-/* --- HEADLINE + DESCRIPTION --- */
 .columns.columns17 > div > div:first-child > h3 {
   font-weight: 700;
   color: #2D2320;
@@ -537,7 +526,6 @@
   max-width: 520px;
 }
 
-/* --- RIGHT COLUMN --- */
 .columns.columns17 > div > .columns-img-col {
   display: flex;
   align-items: center;
@@ -557,7 +545,6 @@
   display: block;
 }
 
-/* --- RESPONSIVE --- */
 @media (width <= 900px) {
   .columns.columns17 > div {
     grid-template-columns: 1fr;
@@ -584,5 +571,214 @@
   .columns.columns17 > div > div:first-child > h3,
   .columns.columns17 > div > div:first-child > p:last-child {
     max-width: 96vw;
+  }
+}
+
+
+.columns.columns19 {
+  background: #f8f6f3;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.columns.columns19 > div {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 40px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 40px 48px 56px;
+  box-sizing: border-box;
+}
+
+@media (width <= 1000px) {
+  .columns.columns19 > div {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 12px;
+  }
+}
+
+/* Left column vertical stack */
+.columns.columns19 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Avatar and speech bubble row */
+.columns.columns19 > div > div:first-child .columns19-avatar-bubble-row,
+.columns.columns19 > div > div:first-child > .columns19-avatar-bubble-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+/* Place avatar and speech bubble side-by-side at the top */
+.columns.columns19 > div > div:first-child > p:first-child,
+.columns.columns19 > div > div:first-child > p:nth-child(2) {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+/* Avatar */
+.columns.columns19 > div > div:first-child > p:first-child picture img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgb(60 60 60 / 10%);
+  display: block;
+  margin: 0 12px 0 0;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+/* Speech bubble */
+.columns.columns19 > div > div:first-child > p:nth-child(2) {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgb(60 60 60 / 12%);
+  padding: 20px 32px 20px 28px;
+  color: #2d2d2d;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin: 0;
+  width: max-content;
+  max-width: 400px;
+  min-width: 220px;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+/* Simulate the row by grouping avatar + speech bubble in a flex container */
+
+@media (width >= 700px) {
+  .columns.columns19 > div > div:first-child {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .columns.columns19 > div > div:first-child > .columns19-avatar-bubble-row,
+  .columns.columns19 > div > div:first-child > p:first-child,
+  .columns.columns19 > div > div:first-child > p:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Heading and body text */
+.columns.columns19 > div > div:first-child h3 {
+  color: #2d2d2d;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.32;
+  margin-top: 0;
+}
+
+.columns.columns19 > div > div:first-child p:not(:first-child, :nth-child(2), .button-container) {
+  color: #606060;
+  font-size: 1.05rem;
+  line-height: 1.62;
+  margin: 0;
+}
+
+/* Button at the bottom */
+.columns.columns19 > div > div:first-child .button-container {
+  margin: 26px 0 0;
+}
+
+.columns.columns19 > div > div:first-child .button-container .button {
+  background: #e53935;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1.07rem;
+  font-weight: 700;
+  padding: 14px 32px;
+  border: none;
+  box-shadow: 0 2px 8px rgb(60 60 60 / 8%);
+  transition: background 0.2s;
+  margin: 0;
+  display: inline-block;
+  min-width: 230px;
+  text-align: center;
+}
+
+.columns.columns19 > div > div:first-child .button-container .button:hover,
+.columns.columns19 > div > div:first-child .button-container .button:focus {
+  background: #b4201a;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Right column: image */
+.columns.columns19 > div > .columns-img-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 0;
+  min-height: 340px;
+}
+
+.columns.columns19 > div > .columns-img-col picture,
+.columns.columns19 > div > .columns-img-col img {
+  width: 100%;
+  max-width: 520px;
+  min-width: 220px;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 4px 16px rgb(60 60 60 / 10%);
+}
+
+/* Responsive: stack columns and reduce paddings on small screens */
+@media (width <= 700px) {
+  .columns.columns19 > div {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 12px 2vw;
+  }
+
+  .columns.columns19 {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .columns.columns19 > div > div:first-child {
+    gap: 12px;
+  }
+
+  .columns.columns19 > div > div:first-child > p:nth-child(2) {
+    max-width: 96vw;
+    min-width: 0;
+    padding: 12px 6vw;
+    font-size: 0.97rem;
+  }
+
+  .columns.columns19 > div > .columns-img-col {
+    min-height: 120px;
+  }
+}
+
+@media (width <= 430px) {
+  .columns.columns19 > div {
+    padding: 8px 1vw;
+  }
+
+  .columns.columns19 > div > div:first-child > p:nth-child(2) {
+    font-size: 0.96rem;
   }
 }
