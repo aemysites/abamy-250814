@@ -31,3 +31,119 @@
     order: unset;
   }
 }
+
+
+.columns.columns1 {
+  max-width: 950px;
+  margin: 48px auto 0;
+  padding: 0;
+  background: #fff;
+}
+
+.columns.columns1 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  width: 100%;
+}
+
+/* Image column */
+.columns.columns1 .columns-img-col {
+  flex: 0 0 320px;
+  width: 320px;
+  max-width: 320px;
+  min-width: 220px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  background: transparent;
+
+  /* Remove any placeholder min-height if image missing */
+  min-height: 0;
+  padding: 0;
+}
+
+.columns.columns1 .columns-img-col picture,
+.columns.columns1 .columns-img-col img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  background: transparent;
+  margin: 0;
+}
+
+/* Remove placeholder for missing image */
+.columns.columns1 .columns-img-col:empty {
+  min-height: 0;
+  background: transparent;
+}
+
+/* Text column */
+.columns.columns1 > div > div:not(.columns-img-col) {
+  flex: 1 1 0;
+  color: #5a5a5a;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  align-self: flex-start;
+  max-width: 580px;
+  text-align: left;
+}
+
+.columns.columns1 > div > div:not(.columns-img-col) p {
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.columns.columns1 > div > div:not(.columns-img-col) a {
+  color: #1a4d8f;
+  text-decoration: none;
+  border-bottom: 1px solid #1a4d8f;
+  transition: border-bottom-color 0.2s;
+}
+
+.columns.columns1 > div > div:not(.columns-img-col) a:hover,
+.columns.columns1 > div > div:not(.columns-img-col) a:focus {
+  text-decoration: underline;
+  border-bottom-color: transparent;
+}
+
+/* Responsive stacking */
+@media (width <= 800px) {
+  .columns.columns1 {
+    max-width: 100%;
+    margin: 24px 0 0;
+    padding: 0;
+  }
+
+  .columns.columns1 > div {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .columns.columns1 .columns-img-col,
+  .columns.columns1 .columns-img-col picture,
+  .columns.columns1 .columns-img-col img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    min-height: 120px;
+  }
+
+  .columns.columns1 > div > div:not(.columns-img-col) {
+    max-width: 100%;
+  }
+}
