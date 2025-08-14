@@ -45,3 +45,54 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center heading horizontally */
+  min-height: unset;
+  padding: 0;
+  background: none;
+  box-sizing: border-box;
+}
+
+.hero.hero4 > div:first-child {
+  width: 0;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  flex: 0 0 0;
+}
+
+.hero.hero4 > div:last-child {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center heading inside container */
+  padding: 0;
+  margin: 0;
+}
+
+.hero.hero4 > div:last-child h1#implantations-de-cuisine {
+  color: #222;
+  font-family: 'Noto Sans', 'Noto Sans Fallback', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  visibility: visible;
+  display: inline-block;
+}
+
+/* Responsive font size for mobile */
+@media (width <= 600px) {
+  .hero.hero4 > div:last-child h1#implantations-de-cuisine {
+    font-size: 22px;
+  }
+}
