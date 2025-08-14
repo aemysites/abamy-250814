@@ -1,9 +1,19 @@
-/* search box */
+/* stylelint-disable no-descending-specificity */
 .search .search-box {
-  display: grid;
+  display: flex;
   grid-template-columns: auto 1fr;
-  gap: 1ch;
+  gap: 16px;
   align-items: center;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 28px rgb(0 0 0 / 15%);
+  padding: 28px 32px;
+  width: 100%;
+  max-width: 420px;
+  min-width: 0;
+  border: none;
+  margin: 0 auto;
 }
 
 .search .search-box input {
@@ -24,7 +34,6 @@
   border: 1px solid var(--text-color);
 }
 
-/* search results */
 .search ul.search-results {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
@@ -79,7 +88,6 @@
   object-fit: cover;
 }
 
-/* no results */
 .search ul.search-results.no-results {
   display: block;
   margin-left: 34px;
@@ -89,7 +97,6 @@
   border: none;
 }
 
-/* minimal variant */
 .search.minimal ul.search-results {
   display: block;
   padding-left: 34px;
@@ -109,7 +116,6 @@
   color: var(--link-color);
 }
 
-/* stylelint-disable no-descending-specificity */
 .search.minimal ul.search-results > li > a {
   background-color: unset;
 }
@@ -134,4 +140,152 @@
   height: 24px;
   width: 24px;
   border-radius: 50%;
+}
+
+
+.search {
+  width: 100vw;
+  min-height: 100vh;
+  background: url('/path/to/your/background.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+
+  /* Prevent inherited margins/paddings from parent affecting centering */
+}
+
+/* Overlay for background image contrast */
+.search::before {
+  position: absolute;
+  inset: 0;
+  background: rgb(25 25 25 / 32%);
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+/* Center content in viewport, ensure stacking is vertical */
+.search > .search-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* vertical stack of content */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+
+.search .block.search {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* vertical stack for box/results */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Search box card styling */
+
+.search .icon-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+}
+
+.search .icon-search img {
+  width: 28px;
+  height: 28px;
+  display: block;
+  filter: invert(34%) sepia(98%) saturate(1853%) hue-rotate(352deg) brightness(93%) contrast(101%);
+}
+
+/* Input style for search box */
+.search .search-input {
+  flex: 1 1 0%;
+  border: 1.2px solid #c6c6c6;
+  border-radius: 9px;
+  font-size: 18px;
+  padding: 11px 16px;
+  outline: none;
+  color: #1a1a1a;
+  background: #fff;
+  min-width: 0;
+  box-shadow: none;
+}
+
+.search .search-input:focus {
+  border-color: #e53935;
+  box-shadow: 0 0 0 2px rgb(229 57 53 / 13%);
+}
+
+/* Hide empty results card */
+.search .search-results:empty {
+  display: none;
+}
+
+/* Results card styling when present */
+.search .search-results {
+  margin-top: 22px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+  padding: 19px 22px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 420px;
+  list-style: none;
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (width <= 700px) {
+  .search {
+    min-height: 360px;
+    padding: 0 2vw;
+  }
+
+  .search > .search-wrapper {
+    max-width: 98vw;
+    padding: 0;
+  }
+
+  .search .search-box,
+  .search .search-results {
+    max-width: 98vw;
+    min-width: 0;
+    width: 100%;
+    padding: 13px 5vw;
+  }
+
+  .search .search-results {
+    padding: 9px 5vw;
+  }
+
+  .search .icon-search {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+
+  .search .icon-search img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search .search-input {
+    font-size: 15px;
+    padding: 7px 8px;
+    border-radius: 7px;
+  }
 }
