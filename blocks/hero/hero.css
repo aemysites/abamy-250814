@@ -113,7 +113,6 @@
   position: relative;
 }
 
-/* LEFT: Image column */
 .hero.hero8 > div:first-child {
   flex: 1 1 58%;
   display: flex;
@@ -121,7 +120,7 @@
   justify-content: stretch;
   min-height: 240px;
   height: 100%;
-  background: #eaeaea; /* fallback color for debugging, remove if image loads */
+  background: #eaeaea;
   overflow: hidden;
   position: relative;
 }
@@ -136,13 +135,12 @@
   position: static;
 }
 
-/* RIGHT: Text column, vertically and horizontally aligned */
 .hero.hero8 > div:last-child {
   flex: 1 1 42%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center; /* vertical center */
+  justify-content: center;
   background: transparent;
   padding: 0 32px;
   min-height: 240px;
@@ -163,7 +161,6 @@
   background: transparent;
 }
 
-/* Responsive: Stack vertically on small screens */
 @media (width <= 700px) {
   .hero.hero8 {
     flex-direction: column;
@@ -189,5 +186,53 @@
   .hero.hero8 > div:first-child picture,
   .hero.hero8 > div:first-child img {
     min-height: 160px;
+  }
+}
+
+
+.hero.hero9 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background: #fff;
+  min-height: unset;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero.hero9 > div:first-child {
+  display: none;
+}
+
+.hero.hero9 > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero.hero9 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: 'Noto Sans', 'Noto Sans Fallback', Arial, sans-serif;
+  font-weight: 400;
+  color: #222;
+  background: transparent;
+  text-align: center;
+  width: 100%;
+  max-width: none;
+  letter-spacing: 0.01em;
+}
+
+/* Fine-tune for smaller screens */
+@media (width <= 600px) {
+  .hero.hero9 {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
