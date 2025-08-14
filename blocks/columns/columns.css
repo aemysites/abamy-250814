@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -49,7 +50,6 @@
   width: 100%;
 }
 
-/* Image column */
 .columns.columns1 .columns-img-col {
   flex: 0 0 320px;
   width: 320px;
@@ -60,8 +60,6 @@
   justify-content: flex-start;
   box-sizing: border-box;
   background: transparent;
-
-  /* Remove any placeholder min-height if image missing */
   min-height: 0;
   padding: 0;
 }
@@ -78,13 +76,11 @@
   margin: 0;
 }
 
-/* Remove placeholder for missing image */
 .columns.columns1 .columns-img-col:empty {
   min-height: 0;
   background: transparent;
 }
 
-/* Text column */
 .columns.columns1 > div > div:not(.columns-img-col) {
   flex: 1 1 0;
   color: #5a5a5a;
@@ -119,7 +115,6 @@
   border-bottom-color: transparent;
 }
 
-/* Responsive stacking */
 @media (width <= 800px) {
   .columns.columns1 {
     max-width: 100%;
@@ -145,5 +140,56 @@
 
   .columns.columns1 > div > div:not(.columns-img-col) {
     max-width: 100%;
+  }
+}
+
+
+.columns.columns10 {
+  background: #f3eeeb;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.columns.columns10 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 28px; /* Slightly reduced for a tighter strip */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns10 > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns10 p {
+  color: #38332e;
+  font-weight: 700;
+  font-size: 14px; /* Reduced for tighter, more compact appearance */
+  line-height: 1.1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+  background: transparent;
+}
+
+@media (width <= 700px) {
+  .columns.columns10 > div {
+    min-height: 22px;
+  }
+
+  .columns.columns10 p {
+    font-size: 13px;
   }
 }
