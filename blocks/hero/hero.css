@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; /* Center heading horizontally */
+  justify-content: center;
   min-height: unset;
   padding: 0;
   background: none;
@@ -69,7 +69,7 @@
   flex: 1 1 auto;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center heading inside container */
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -90,9 +90,104 @@
   display: inline-block;
 }
 
-/* Responsive font size for mobile */
 @media (width <= 600px) {
   .hero.hero4 > div:last-child h1#implantations-de-cuisine {
     font-size: 22px;
+  }
+}
+
+
+.hero.hero8 {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 900px;
+  min-height: 240px;
+  height: 240px;
+  margin: 0 auto;
+  background: var(--background-color);
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+}
+
+/* LEFT: Image column */
+.hero.hero8 > div:first-child {
+  flex: 1 1 58%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  min-height: 240px;
+  height: 100%;
+  background: #eaeaea; /* fallback color for debugging, remove if image loads */
+  overflow: hidden;
+  position: relative;
+}
+
+.hero.hero8 > div:first-child picture,
+.hero.hero8 > div:first-child img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+  position: static;
+}
+
+/* RIGHT: Text column, vertically and horizontally aligned */
+.hero.hero8 > div:last-child {
+  flex: 1 1 42%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center; /* vertical center */
+  background: transparent;
+  padding: 0 32px;
+  min-height: 240px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.hero.hero8 h2 {
+  color: #111;
+  font-family: var(--heading-font-family);
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+  line-height: 1.2;
+  align-self: flex-start;
+  max-width: unset;
+  background: transparent;
+}
+
+/* Responsive: Stack vertically on small screens */
+@media (width <= 700px) {
+  .hero.hero8 {
+    flex-direction: column;
+    max-width: 100%;
+    min-height: unset;
+    height: auto;
+  }
+
+  .hero.hero8 > div:first-child,
+  .hero.hero8 > div:last-child {
+    flex-basis: auto;
+    min-height: 160px;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero.hero8 > div:last-child {
+    padding: 24px 16px 0;
+    justify-content: flex-start;
+  }
+
+  .hero.hero8 > div:first-child picture,
+  .hero.hero8 > div:first-child img {
+    min-height: 160px;
   }
 }
