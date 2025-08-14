@@ -618,3 +618,212 @@
     max-width: 98vw;
   }
 }
+
+
+.hero.hero22 {
+  position: relative;
+  display: block;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 340px;
+  max-width: 1120px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 10%);
+  background: none;
+  padding: 0;
+}
+
+/* Make sure background image fills the hero and is not covered */
+.hero.hero22 > div:first-child {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero.hero22 picture,
+.hero.hero22 picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
+}
+
+/* Overlay card: left-anchored, semi-transparent, not centered */
+.hero.hero22 > div:last-child {
+  position: absolute;
+  left: 40px;
+  top: 12%;
+  z-index: 2;
+  max-width: 410px;
+  width: 96%;
+  background: rgb(255 255 255 / 84%);
+  border-radius: 15px;
+  padding: 32px 34px 26px;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 6%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.hero.hero22 > div:last-child > div {
+  width: 100%;
+  display: block;
+}
+
+/* Heading: make inline with bold and italic side-by-side */
+.hero.hero22 > div:last-child > div > p:first-child {
+  margin: 0 0 18px;
+  padding: 0;
+  background: none;
+  font-size: 2.1rem;
+  line-height: 1.12;
+  font-weight: 400;
+  color: #212121;
+  letter-spacing: 0;
+  display: block;
+}
+
+/* Bold phrase */
+.hero.hero22 > div:last-child > div > p:first-child strong {
+  display: inline;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #212121;
+  font-style: normal;
+  margin-right: 12px;
+  line-height: 1.12;
+  letter-spacing: 0;
+  background: none;
+  white-space: pre-line;
+  vertical-align: baseline;
+}
+
+/* Italic phrase, right after strong, lighter color */
+.hero.hero22 > div:last-child > div > p:first-child :not(strong) {
+  display: inline;
+  font-size: 2.1rem;
+  font-weight: 400;
+  color: #3c3c3c;
+  font-style: italic;
+  margin-left: 0;
+  background: none;
+  letter-spacing: 0;
+  white-space: pre-line;
+  vertical-align: baseline;
+}
+
+/* Subtitle styling: readable, spaced */
+.hero.hero22 > div:last-child > div > p:nth-child(2) {
+  color: #212121;
+  font-size: 1.14rem;
+  font-weight: 400;
+  margin: 0 0 22px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+/* Button container: left-aligned, no extra width */
+.hero.hero22 .button-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Button styling: prominent, left-aligned, normal size */
+.hero.hero22 .button-container .button {
+  background: #e30613;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.07rem;
+  border-radius: 8px;
+  padding: 13px 36px 13px 20px;
+  min-width: 0;
+  text-align: left;
+  box-shadow: none;
+  border: none;
+  margin: 12px 0 0;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.18s;
+  line-height: 1;
+}
+
+.hero.hero22 .button-container .button:hover,
+.hero.hero22 .button-container .button:focus {
+  background: #b1050f;
+}
+
+.hero.hero22 .button-container .button::after {
+  display: inline-block;
+  margin-left: 12px;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  background: url('data:image/svg+xml;utf8,<svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M5 4l4 3.5-4 3.5" stroke="white" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>') no-repeat center center;
+  background-size: 15px 15px;
+  content: "";
+}
+
+/* Responsive adjustments */
+@media (width <= 900px) {
+  .hero.hero22 {
+    max-width: 100vw;
+    border-radius: 0;
+    min-height: 240px;
+  }
+
+  .hero.hero22 > div:last-child {
+    left: 3vw;
+    right: 3vw;
+    top: 4vw;
+    max-width: 97vw;
+    padding: 15px 8px 14px 12px;
+    border-radius: 10px;
+  }
+
+  .hero.hero22 picture,
+  .hero.hero22 picture img {
+    min-height: 240px;
+    border-radius: 0;
+  }
+
+  .hero.hero22 > div:last-child > div > p:first-child,
+  .hero.hero22 > div:last-child > div > p:first-child strong,
+  .hero.hero22 > div:last-child > div > p:first-child :not(strong) {
+    font-size: 1.13rem;
+  }
+
+  .hero.hero22 > div:last-child > div > p:nth-child(2) {
+    font-size: 0.97rem;
+    margin-bottom: 9px;
+  }
+
+  .hero.hero22 .button-container .button {
+    font-size: 0.97rem;
+    padding: 10px 19px 10px 9px;
+    margin-top: 8px;
+  }
+
+  .hero.hero22 .button-container .button::after {
+    margin-left: 7px;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+  }
+}
+
+/* Ensures hero can span full width if needed */
+.hero-container > .hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
