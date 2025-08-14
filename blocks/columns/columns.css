@@ -205,7 +205,6 @@
   padding: 0;
 }
 
-/* --- ROW: Split main row into two columns --- */
 .columns.columns15 > div {
   display: flex;
   flex-direction: row;
@@ -224,7 +223,6 @@
   }
 }
 
-/* --- LEFT: images area --- */
 .columns.columns15 > div > div:first-child {
   flex: 1 1 62%;
   display: flex;
@@ -245,7 +243,6 @@
   }
 }
 
-/* Two image <p>s side by side */
 .columns.columns15 > div > div:first-child > p {
   flex: 1 1 50%;
   display: flex;
@@ -266,10 +263,9 @@
   min-height: 340px;
   object-fit: cover;
   display: block;
-  background: #e5e5e5; /* fallback so not blank if image fails */
+  background: #e5e5e5;
 }
 
-/* Vertical divider */
 .columns.columns15 > div > div:first-child::after {
   position: absolute;
   top: 0;
@@ -285,7 +281,6 @@
   content: "";
 }
 
-/* Center button: just a circle (no text/arrow) */
 .columns.columns15 > div > div:first-child::before {
   display: block;
   position: absolute;
@@ -309,7 +304,6 @@
   }
 }
 
-/* --- RIGHT: testimonial/card area --- */
 .columns.columns15 > div > div:last-child {
   flex: 0 1 420px;
   min-width: 340px;
@@ -335,8 +329,6 @@
   }
 }
 
-/* --- Testimonial card grouping and placement --- */
-
 .columns.columns15 > div > div:last-child > h4,
 .columns.columns15 > div > div:last-child > p,
 .columns.columns15 > div > div:last-child > picture {
@@ -348,7 +340,6 @@
   display: block;
 }
 
-/* Simulate a compact card using a flex wrapper on the last-child */
 .columns.columns15 > div > div:last-child .columns15-card-group,
 .columns.columns15 > div > div:last-child > h4 + p {
   display: flex;
@@ -376,7 +367,6 @@
   }
 }
 
-/* Group heading and testimonial text tightly inside card */
 .columns.columns15 > div > div:last-child > h4 {
   font-size: 1.25rem;
   color: #23343B;
@@ -419,9 +409,180 @@
   padding-bottom: 0;
 }
 
-/* Remove card background from p outside the card group (so only the grouped card has background) */
 .columns.columns15 > div > div:last-child > p:not(:first-of-type) {
   background: none;
   box-shadow: none;
   padding: 0;
+}
+
+
+.columns.columns17 {
+  background: #ECE8E5;
+  padding: 40px 0 48px;
+}
+
+/* Main block: grid for two columns */
+.columns.columns17 > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 44px 56px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* --- LEFT COLUMN --- */
+.columns.columns17 > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+  width: 100%;
+  gap: 0;
+}
+
+/* Chat Row: avatar left, chat bubbles right */
+.columns.columns17 > div > div:first-child .columns17-chatrow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.columns.columns17 > div > div:first-child > p:nth-child(1) {
+  /* If not in .columns17-chatrow (legacy case), don't flex */
+  margin: 0;
+  padding: 0;
+}
+
+/* Force the avatar and bubbles into a row if not wrapped in .columns17-chatrow */
+.columns.columns17 > div > div:first-child > p:nth-child(1),
+.columns.columns17 > div > div:first-child > p:nth-child(2),
+.columns.columns17 > div > div:first-child > p:nth-child(3),
+.columns.columns17 > div > div:first-child > p:nth-child(4) {
+  display: block;
+}
+
+/* Avatar style */
+.columns.columns17 > div > div:first-child > p:nth-child(1) img {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  box-shadow: 0 2px 12px rgb(80 60 50 / 3%);
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Chat bubbles: stacked vertically, to right of avatar */
+.columns.columns17 > div > div:first-child .columns17-bubbles,
+.columns.columns17 > div > div:first-child > .columns17-bubbles {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.columns.columns17 > div > div:first-child > p:nth-child(2),
+.columns.columns17 > div > div:first-child > p:nth-child(3),
+.columns.columns17 > div > div:first-child > p:nth-child(4) {
+  background: #fff;
+  border-radius: 22px;
+  padding: 16px 24px;
+  color: #4B3B36;
+  font-size: 17px;
+  font-family: inherit;
+  font-weight: 400;
+  min-width: 220px;
+  max-width: 390px;
+  margin: 0;
+  box-shadow: 0 1px 4px rgb(80 60 50 / 5%);
+  line-height: 1.38;
+}
+
+/* Add space between bubbles */
+.columns.columns17 > div > div:first-child > p:nth-child(2) { margin-bottom: 13px; }
+.columns.columns17 > div > div:first-child > p:nth-child(3) { margin-bottom: 13px; }
+.columns.columns17 > div > div:first-child > p:nth-child(4) { margin-bottom: 0; }
+
+/* Remove/hide the unnecessary small image below bubbles */
+.columns.columns17 > div > div:first-child > p:nth-child(5) {
+  display: none;
+}
+
+/* --- HEADLINE + DESCRIPTION --- */
+.columns.columns17 > div > div:first-child > h3 {
+  font-weight: 700;
+  color: #2D2320;
+  font-size: 1.17em;
+  margin: 42px 0 8px;
+  font-family: inherit;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.columns.columns17 > div > div:first-child > p:last-child {
+  color: #7C7976;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 520px;
+}
+
+/* --- RIGHT COLUMN --- */
+.columns.columns17 > div > .columns-img-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 320px;
+  width: 100%;
+}
+
+.columns.columns17 > div > .columns-img-col picture,
+.columns.columns17 > div > .columns-img-col img {
+  width: 410px;
+  max-width: 100%;
+  min-width: 260px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgb(80 60 50 / 5.5%);
+  display: block;
+}
+
+/* --- RESPONSIVE --- */
+@media (width <= 900px) {
+  .columns.columns17 > div {
+    grid-template-columns: 1fr;
+    gap: 28px 0;
+    max-width: 100%;
+  }
+
+  .columns.columns17 > div > div:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .columns.columns17 > div > .columns-img-col picture,
+  .columns.columns17 > div > .columns-img-col img {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .columns.columns17 {
+    padding: 22px 0 28px;
+  }
+
+  .columns.columns17 > div > div:first-child > h3,
+  .columns.columns17 > div > div:first-child > p:last-child {
+    max-width: 96vw;
+  }
 }
