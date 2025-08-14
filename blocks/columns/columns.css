@@ -601,7 +601,6 @@
   }
 }
 
-/* Left column vertical stack */
 .columns.columns19 > div > div:first-child {
   display: flex;
   flex-direction: column;
@@ -612,7 +611,6 @@
   position: relative;
 }
 
-/* Avatar and speech bubble row */
 .columns.columns19 > div > div:first-child .columns19-avatar-bubble-row,
 .columns.columns19 > div > div:first-child > .columns19-avatar-bubble-row {
   display: flex;
@@ -624,7 +622,6 @@
   margin-top: 0;
 }
 
-/* Place avatar and speech bubble side-by-side at the top */
 .columns.columns19 > div > div:first-child > p:first-child,
 .columns.columns19 > div > div:first-child > p:nth-child(2) {
   display: inline-block;
@@ -633,7 +630,6 @@
   padding: 0;
 }
 
-/* Avatar */
 .columns.columns19 > div > div:first-child > p:first-child picture img {
   width: 64px;
   height: 64px;
@@ -645,7 +641,6 @@
   flex-shrink: 0;
 }
 
-/* Speech bubble */
 .columns.columns19 > div > div:first-child > p:nth-child(2) {
   background: #fff;
   border-radius: 18px;
@@ -662,8 +657,6 @@
   display: inline-block;
 }
 
-/* Simulate the row by grouping avatar + speech bubble in a flex container */
-
 @media (width >= 700px) {
   .columns.columns19 > div > div:first-child {
     flex-direction: column;
@@ -679,7 +672,6 @@
   }
 }
 
-/* Heading and body text */
 .columns.columns19 > div > div:first-child h3 {
   color: #2d2d2d;
   font-size: 1.18rem;
@@ -696,7 +688,6 @@
   margin: 0;
 }
 
-/* Button at the bottom */
 .columns.columns19 > div > div:first-child .button-container {
   margin: 26px 0 0;
 }
@@ -724,7 +715,6 @@
   text-decoration: none;
 }
 
-/* Right column: image */
 .columns.columns19 > div > .columns-img-col {
   display: flex;
   align-items: flex-start;
@@ -744,7 +734,6 @@
   box-shadow: 0 4px 16px rgb(60 60 60 / 10%);
 }
 
-/* Responsive: stack columns and reduce paddings on small screens */
 @media (width <= 700px) {
   .columns.columns19 > div {
     grid-template-columns: 1fr;
@@ -781,4 +770,89 @@
   .columns.columns19 > div > div:first-child > p:nth-child(2) {
     font-size: 0.96rem;
   }
+}
+
+
+.columns.columns24 {
+  background: #faf7f5;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 0;
+  box-sizing: border-box;
+}
+
+/* Key fix: top-align columns, not center */
+.columns.columns24 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 48px;
+  padding: 0 32px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Responsive: stack columns vertically and adjust paddings */
+@media (width <= 800px) {
+  .columns.columns24 {
+    padding: 32px 0;
+  }
+
+  .columns.columns24 > div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+    padding: 0 16px;
+  }
+}
+
+/* Text column */
+.columns.columns24 > div > div:first-child {
+  flex: 1 1 0;
+  max-width: 325px;
+  min-width: 0;
+  text-align: left;
+  align-self: flex-start;
+}
+
+/* Image column */
+.columns.columns24 .columns-img-col {
+  flex: 1 1 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+/* Make image more rectangular and flush to top */
+.columns.columns24 .columns-img-col img {
+  width: 390px;
+  max-width: 420px;
+  max-height: 275px;
+  object-fit: cover;
+  display: block;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  margin: 0;
+}
+
+/* Responsive image */
+@media (width <= 800px) {
+  .columns.columns24 .columns-img-col img {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    object-fit: contain;
+  }
+}
+
+/* Paragraph styling */
+.columns.columns24 p {
+  color: #333;
+  font-size: 14px;
+  font-family: 'Noto Sans', 'Noto Sans Fallback', Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0 0 10px;
 }
