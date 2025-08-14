@@ -25,12 +25,6 @@
       "source": "MANUAL",
       "targetPath": "/fr-fr/magasins",
       "id": "b79d242bc2a941a465323f4ccbf68701a8af9003"
-    },
-    {
-      "url": "https://www.ma.cuisinella/fr-fr/prendre-rendez-vous-magasin",
-      "source": "MANUAL",
-      "targetPath": "/fr-fr/prendre-rendez-vous-magasin",
-      "id": "db840c637771733453265c26678a57f63cebff7f"
     }
   ],
   "crawlOptions": {
