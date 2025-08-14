@@ -1,42 +1,42 @@
-  {
-    "originUrl": "https://www.ma.cuisinella",
-    "aborted": false,
-    "urls": [
-      {
-        "url": "https://www.ma.cuisinella/fr-fr/",
-        "source": "MANUAL",
-        "targetPath": "/fr-fr",
-        "id": "8e901a251c97c83b0fb0e275a801d39a1f1bb9da"
-      },
-      {
-        "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
-        "source": "MANUAL",
-        "targetPath": "/fr-fr/conception-cuisine-3d",
-        "id": "4be5ff47804c107eb04da219cdbc7762f96818b0"
-      },
-      {
-        "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
-        "source": "MANUAL",
-        "targetPath": "/fr-fr/cuisine-equipee",
-        "id": "41759303accf3a88540ccee9c006e46a46b352f7"
-      },
-      {
-        "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
-        "source": "MANUAL",
-        "targetPath": "/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
-        "id": "08bb30521187c6311481f0f3f198514e48ebb364"
-      },
-      {
-        "url": "https://www.ma.cuisinella/fr-fr/magasins",
-        "source": "MANUAL",
-        "targetPath": "/fr-fr/magasins",
-        "id": "b79d242bc2a941a465323f4ccbf68701a8af9003"
-      }
-    ],
-    "crawlOptions": {
-      "strategy": "manual",
-      "strategiesAttempted": [
-        "MANUAL"
-      ]
+{
+  "originUrl": "https://www.ma.cuisinella",
+  "aborted": false,
+  "urls": [
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/",
+      "source": "MANUAL",
+      "targetPath": "/fr-fr",
+      "id": "8e901a251c97c83b0fb0e275a801d39a1f1bb9da"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/conception-cuisine-3d",
+      "source": "MANUAL",
+      "targetPath": "/fr-fr/conception-cuisine-3d",
+      "id": "4be5ff47804c107eb04da219cdbc7762f96818b0"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/cuisine-equipee",
+      "source": "MANUAL",
+      "targetPath": "/fr-fr/cuisine-equipee",
+      "id": "41759303accf3a88540ccee9c006e46a46b352f7"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "source": "MANUAL",
+      "targetPath": "/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
+      "id": "08bb30521187c6311481f0f3f198514e48ebb364"
+    },
+    {
+      "url": "https://www.ma.cuisinella/fr-fr/magasins",
+      "source": "MANUAL",
+      "targetPath": "/fr-fr/magasins",
+      "id": "b79d242bc2a941a465323f4ccbf68701a8af9003"
     }
+  ],
+  "crawlOptions": {
+    "strategy": "manual",
+    "strategiesAttempted": [
+      "MANUAL"
+    ]
   }
+}
