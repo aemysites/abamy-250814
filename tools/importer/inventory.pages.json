@@ -1,7 +1,7 @@
 {
   "templates": [
     {
-      "name": "'Multi-purpose content hub'",
+      "name": "'Multi-layout Content Hub'",
       "cluster": 1,
       "pages": [
         {
@@ -15,8 +15,18 @@
       ]
     },
     {
-      "name": "'Blog Listing Page'",
+      "name": "\"Interactive Map Page\"",
       "cluster": 2,
+      "pages": [
+        {
+          "url": "https://www.ma.cuisinella/fr-fr/magasins",
+          "uuid": "b79d242bc2a941a465323f4ccbf68701a8af9003"
+        }
+      ]
+    },
+    {
+      "name": "'Content Listing Page'",
+      "cluster": 3,
       "pages": [
         {
           "url": "https://www.ma.cuisinella/fr-fr/experience-cuisinella/qui-sommes-nous/nos-valeurs",
@@ -25,12 +35,12 @@
       ]
     },
     {
-      "name": "'Interactive Map Page'",
-      "cluster": 3,
+      "name": "'Multi-section content page'",
+      "cluster": 4,
       "pages": [
         {
-          "url": "https://www.ma.cuisinella/fr-fr/magasins",
-          "uuid": "b79d242bc2a941a465323f4ccbf68701a8af9003"
+          "url": "https://www.ma.cuisinella/fr-fr",
+          "uuid": "19ffb724c2676dd9da3abc230f2b9d5cbeb4f926"
         }
       ]
     }
