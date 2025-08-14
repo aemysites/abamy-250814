@@ -1,32 +1,41 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // 1. Table header row: must be exactly 'Hero (hero9)'
+  // Table header row must match sample: 'Hero (hero9)'
   const headerRow = ['Hero (hero9)'];
 
-  // 2. Image/background row: the example has an image, but
-  // the provided HTML does NOT have an image (or background asset element),
-  // so this row is just an empty cell.
-  const imageRow = [''];
+  // No background image in HTML, so row 2 is empty string
+  const backgroundRow = [''];
 
-  // 3. Content row: extract the headline and reference the existing heading structure
-  // The main headline is inside h2.sc-Title-title, but this may include desktop/mobile versions
-  // We'll reference the h2 directly, which includes all headline variants
-  let headlineElem = element.querySelector('h2');
-  if (!headlineElem) {
-    // fallback: there may be no h2, just use the full block
-    headlineElem = element;
+  // Find the main content area
+  const richText = element.querySelector('.sc-RichText') || element;
+
+  // Try to get the most prominent headline (desktop headline if present, else mobile)
+  const mobileHide = richText.querySelector('.mobile-hide');
+  const mobileShow = richText.querySelector('.mobile-show');
+
+  // Use desktop headline if available, else use mobile
+  let headlineElem = null;
+  if (mobileHide) {
+    headlineElem = mobileHide;
+  } else if (mobileShow) {
+    headlineElem = mobileShow;
   }
 
-  const contentRow = [headlineElem];
+  // Get supporting paragraph if present
+  const paragraph = richText.querySelector('p');
 
-  // Compose the table as per requirements
-  const cells = [
-    headerRow,
-    imageRow,
-    contentRow
-  ];
+  // Collect everything for the content row
+  // Reference original elements directly (not cloning)
+  const contentElems = [];
+  if (headlineElem) contentElems.push(headlineElem);
+  if (paragraph) contentElems.push(paragraph);
 
-  // Create the block table and replace the original element
-  const table = WebImporter.DOMUtils.createTable(cells, document);
-  element.replaceWith(table);
+  // If nothing was found, fill with empty string for resilience
+  const contentRow = [contentElems.length ? contentElems : ['']];
+
+  // Compose block table
+  const cells = [headerRow, backgroundRow, contentRow];
+  const block = WebImporter.DOMUtils.createTable(cells, document);
+
+  element.replaceWith(block);
 }

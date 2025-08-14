@@ -1,37 +1,25 @@
 /* global WebImporter */
 export default function parse(element, { document }) {
-  // Table header row matches example
+  // Header exactly as in the example
   const headerRow = ['Hero (hero11)'];
 
-  // Find picture/image element for background
-  let imgEl = null;
-  const pictureContainer = element.querySelector('.sc-Banner-picture picture');
-  if (pictureContainer) {
-    imgEl = pictureContainer.querySelector('img');
+  // Row 2: Background image (none in source, so empty string)
+  const backgroundRow = [''];
+
+  // Row 3: Title/subheading/copy etc.
+  // Move all children into a wrapper div to preserve formatting and structure, referencing existing nodes
+  const contentDiv = document.createElement('div');
+  while (element.firstChild) {
+    contentDiv.appendChild(element.firstChild);
   }
+  const contentRow = [contentDiv];
 
-  // Extract the main content block containing the heading, etc.
-  // There may be nested sections, so get first .sc-Banner-content under .columns
-  let contentBlock = null;
-  const columnsContainer = element.querySelector('.columns');
-  if (columnsContainer) {
-    contentBlock = columnsContainer.querySelector('.sc-Banner-content');
-  }
+  // Compose the cells/rows
+  const cells = [headerRow, backgroundRow, contentRow];
 
-  // Fallback if direct child not found
-  if (!contentBlock) {
-    contentBlock = element.querySelector('.sc-Banner-content');
-  }
-
-  // Ensure empty row if image missing
-  const imageRow = imgEl ? [imgEl] : [''];
-  // Ensure empty row if content missing
-  const contentRow = contentBlock ? [contentBlock] : [''];
-
-  // Compose table array: header, image, content
-  const cells = [headerRow, imageRow, contentRow];
-
-  // Create block table and replace original element
+  // Create the table using the provided API
   const block = WebImporter.DOMUtils.createTable(cells, document);
+
+  // Replace the original element with the new table
   element.replaceWith(block);
 }
