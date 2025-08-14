@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -276,3 +277,104 @@
     font-size: 1.08rem;
   }
 }
+
+
+.cards.cards18 > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (width <= 900px) {
+  .cards.cards18 > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cards18 > ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cards.cards18 > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: #fff;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  padding-bottom: 0;
+}
+
+/* Vertical separator as border-right */
+.cards.cards18 > ul > li:not(:last-child) {
+  border-right: 2px solid #eee;
+}
+
+@media (width <= 900px) {
+  .cards.cards18 > ul > li {
+    border-right: none;
+  }
+}
+
+/* Ensure image fills card width, is visible, and is not overridden by base styles */
+.cards.cards18 .cards-card-image,
+.cards.cards18 .cards-card-image picture {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.cards.cards18 .cards-card-image img,
+.cards.cards18 .cards-card-image picture > img {
+  display: block;
+  width: 100%;
+  height: 130px;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  max-height: none;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: transparent;
+  margin: 0;
+}
+
+/* Label immediately beneath image, centered, compact */
+.cards.cards18 .cards-card-body {
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding: 0;
+  display: block;
+}
+
+.cards.cards18 .cards-card-body p {
+  margin: 0;
+}
+
+.cards.cards18 .cards-card-body strong {
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Remove extra white space below cards */
